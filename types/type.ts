@@ -42,3 +42,10 @@ try {
   console.error(error);
 }
 let a = "ffff";
+
+let message = "Hello Typscript";
+
+const calculateArea = (length: number, width: number) => {
+  return length * width;
+};
+console.log("THIS IS THE FUNCTION", calculateArea(23, 34));
