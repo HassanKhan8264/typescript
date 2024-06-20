@@ -49,3 +49,4 @@ const calculateArea = (length: number, width: number) => {
   return length * width;
 };
 console.log("THIS IS THE FUNCTION", calculateArea(23, 34));
+// optional and defualt parameters in function
