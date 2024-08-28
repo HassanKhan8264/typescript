@@ -37,7 +37,31 @@ catch (error) {
 }
 let a = "ffff";
 let message = "Hello Typscript";
+console.log('testing');
+let message2 = "Hello Typscript";
 const calculateArea = (length, width) => {
     return length * width;
 };
-console.log("THIS IS THE FUNCTION", calculateArea(23, 34));
+console.log('Area: ', calculateArea(23, 34));
+const greeting = (name, id = 1) => {
+    return `welcome ${name} and your ${id}`;
+};
+console.log(greeting('Hello Typscript'));
+const optionalParameters = (name, id) => {
+    if (id) {
+        return `welcome ${name} and your ${id}`;
+    }
+    return `welcome ${name}`;
+};
+console.log(optionalParameters('optional user'));
+const arrayOfNumber = [1, 2, 3, 4, 5];
+const calculateAverageNumber = (numbers) => {
+    const sum = numbers.reduce((acc, curr) => acc + curr, 0);
+    return sum / numbers.length;
+};
+console.log('Average of array: ', calculateAverageNumber([1, 2, 3, 4, 5]));
+const findMaxValue = (number) => {
+    return Math.max(...number);
+};
+console.log('max value: ', findMaxValue([1, 2, 3, 4, 5, 6, 7, 8, 8, 9,]));
+//# sourceMappingURL=type.js.map

@@ -18,3 +18,4 @@ let price = 20;
 let product = `laptop`;
 let priceAndProduct = `product ${product} is price at ${price}`;
 console.log(priceAndProduct, 5 % 2);
+//# sourceMappingURL=index.js.map

@@ -45,8 +45,45 @@ let a = "ffff";
 
 let message = "Hello Typscript";
 
-const calculateArea = (length: number, width: number) => {
-  return length * width;
-};
-console.log("THIS IS THE FUNCTION", calculateArea(23, 34));
+// const calculateArea = (length: number, width: number) => {
+//   return length * width;
+// };
+// console.log("THIS IS THE FUNCTION", calculateArea(23, 34));
 // optional and defualt parameters in function
+console.log('testing');
+let message2 = "Hello Typscript"
+
+const calculateArea = (length:number, width:number) => {
+  return length * width;
+}
+
+console.log('Area: ', calculateArea(23, 34));
+
+// default parameters
+const greeting = (name:string,id:number = 1) => {
+  return `welcome ${name} and your ${id}`;
+}
+console.log(greeting('Hello Typscript'));
+
+// optional parameters in function
+const optionalParameters = (name:string,id?:number) => {
+  if(id){
+    return `welcome ${name} and your ${id}`;
+  }
+  return `welcome ${name}`;
+}
+
+console.log(optionalParameters('optional user'));
+
+const arrayOfNumber:number[] = [1, 2, 3, 4, 5]
+const calculateAverageNumber = (numbers:number[]) => {
+  const sum = numbers.reduce((acc,curr) => acc + curr,0);
+  return sum / numbers.length;
+}
+console.log('Average of array: ', calculateAverageNumber([1, 2, 3, 4, 5]));
+
+
+const findMaxValue = (number:number[]) => {
+  return Math.max(...number);
+}
+console.log('max value: ', findMaxValue([1,2,3,4,5,6,7,8,8,9,]));

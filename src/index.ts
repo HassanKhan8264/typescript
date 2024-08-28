@@ -23,3 +23,4 @@ let product: string = `laptop`;
 let priceAndProduct = `product ${product} is price at ${price}`;
 
 console.log(priceAndProduct, 5 % 2);
+// 
